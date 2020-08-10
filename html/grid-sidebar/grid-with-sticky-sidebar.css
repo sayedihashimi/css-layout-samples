@@ -1,0 +1,19 @@
+﻿html, body {
+    height: 100%;
+    width: 100%;
+    margin:0;
+}
+body{
+    display:grid;
+    grid-template-columns:1fr 3fr;
+}
+aside{
+    background-color:azure;
+    height:100%;
+}
+main{
+    background-color: aquamarine;
+    height: 100%;
+    /*this will allow the main content to scroll independently of other elements*/
+    overflow:scroll;
+}

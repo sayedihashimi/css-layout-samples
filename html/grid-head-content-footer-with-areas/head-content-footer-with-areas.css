@@ -1,7 +1,9 @@
-html,body{
-    height:100%;
+html, body {
+    height: 100%;
+    margin:0;
 }
-#page {
+
+body {
     display: grid;
     width: 100%;
     height: 100%;
@@ -10,19 +12,22 @@ html,body{
     grid-template-columns: 1fr 3fr;
 }
 
-    #page > header {
-        grid-area: head;
-        background-color: #8ca0ff;
-    }
-    #page > nav {
-        grid-area: nav;
-        background-color: #ffa08c;
-    }
-    #page > main {
-        grid-area: main;
-        background-color: #ffff64;
-    }
-    #page > footer {
-        grid-area: foot;
-        background-color: #8cffa0;
-    }
+header {
+    grid-area: head;
+    background-color: #8ca0ff;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #ffa08c;
+}
+
+main {
+    grid-area: main;
+    background-color: #ffff64;
+}
+
+footer {
+    grid-area: foot;
+    background-color: #8cffa0;
+}

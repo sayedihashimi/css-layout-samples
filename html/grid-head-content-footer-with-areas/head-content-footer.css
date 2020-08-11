@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
 }
-#page{
+body{
     display:grid;
     height:100%;
     grid-template-columns: 1fr 3fr;
@@ -21,18 +21,15 @@ main{
 footer{
     grid-column: 1 / 3;
 }
-#page > header {
+header {
     background-color: #8ca0ff;
 }
-
-#page > nav {
+nav {
     background-color: #ffa08c;
 }
-
-#page > main {
+main {
     background-color: #ffff64;
 }
-
-#page > footer {
-    background-color: #8cffa0;
+footer {
+    
 }

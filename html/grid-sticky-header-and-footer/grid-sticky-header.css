@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+body {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 1fr;
+}
+
+header {
+    background-color: #8ca0ff;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 100%;
+    overflow: hidden;
+    background-color: #ffff64;
+}
+
+.scroll {
+    overflow-y: scroll;
+    padding: 0 20px;
+}

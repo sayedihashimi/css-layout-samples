@@ -1,7 +1,8 @@
 ﻿html, body {
     height: 100%;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 5px;
+    font: 16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
 body {
     display: grid;

@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+    font: 16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: #8ca0ff;
+}
+
+nav, .hspacing {
+    background-color: #ffa08c;
+}
+
+section {
+    background-color: #ffff64;
+    display: flex;
+    flex-direction: column;
+}
+article{
+  height:100px;
+  width:80%;
+  border:1px solid black;
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+footer {
+    background-color: #8cffa0;
+}

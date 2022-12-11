@@ -1,7 +1,6 @@
 html, body {
     height: 100%;
     margin: 0;
-    padding: 5px;
     font: 16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
 
@@ -11,11 +10,11 @@ body {
 }
 
 header {
-    background-color: #8ca0ff;
+    background-color: hsl(230, 100%, 77%);
 }
 
 section {
-    background-color: #ffff64;
+    background-color: hsl(60, 100%, 70%);
     display: flex;
     flex-direction: column;
 }
@@ -28,5 +27,5 @@ article{
   margin-bottom:10px;
 }
 footer {
-    background-color: #8cffa0;
+    background-color: hsl(130, 100%, 77%);
 }

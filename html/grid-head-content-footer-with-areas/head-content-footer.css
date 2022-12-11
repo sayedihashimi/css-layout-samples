@@ -1,7 +1,6 @@
 ﻿html, body {
     height: 100%;
     margin: 0;
-    padding: 5px;
     font: 16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
 body{
@@ -23,13 +22,13 @@ footer{
     grid-column: 1 / 3;
 }
 header {
-    background-color: #8ca0ff;
+    background-color: hsl(230, 100%, 77%);
 }
 nav {
-    background-color: #ffa08c;
+    background-color: hsl(10, 100%, 77%);
 }
 main {
-    background-color: #ffff64;
+    background-color: hsl(60, 100%, 70%);
 }
 footer {
     

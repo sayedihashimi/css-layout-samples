@@ -13,14 +13,14 @@ body {
 }
 
 header {
-    background-color: #8ca0ff;
+    background-color: hsl(230, 100%, 77%);
 }
 
 .main-content {
     display: grid;
     grid-template-columns: 100%;
     overflow: hidden;
-    background-color: #ffff64;
+    background-color: hsl(60, 100%, 70%);
 }
 
 .scroll {

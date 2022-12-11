@@ -16,20 +16,20 @@ body {
 
 header {
     grid-area: head;
-    background-color: #8ca0ff;
+    background-color: hsl(230, 100%, 77%);
 }
 
 nav {
     grid-area: nav;
-    background-color: #ffa08c;
+    background-color: hsl(10, 100%, 77%);
 }
 
 main {
     grid-area: main;
-    background-color: #ffff64;
+    background-color: hsl(60, 100%, 70%);
 }
 
 footer {
     grid-area: foot;
-    background-color: #8cffa0;
+    background-color: hsl(130, 100%, 77%);
 }

@@ -2,7 +2,6 @@
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 5px;
     font: 16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
 body{
@@ -10,11 +9,11 @@ body{
     grid-template-columns:1fr 3fr;
 }
 aside{
-    background-color:azure;
+    background-color:hsl(230, 100%, 77%);
     height:100%;
 }
 main{
-    background-color: aquamarine;
+    background-color: hsl(160, 100%, 75%);
     height: 100%;
     /*overflow:scroll;*/
 }

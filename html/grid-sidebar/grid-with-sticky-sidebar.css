@@ -10,11 +10,11 @@ body{
     grid-template-columns:1fr 3fr;
 }
 aside{
-    background-color:azure;
+    background-color:hsl(180, 100%, 97%);
     height:100%;
 }
 main{
-    background-color: aquamarine;
+    background-color: hsl(160, 100%, 75%);
     height: 100%;
     /*this will allow the main content to scroll independently of other elements*/
     overflow:scroll;

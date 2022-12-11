@@ -14,10 +14,6 @@ header {
     background-color: #8ca0ff;
 }
 
-nav, .hspacing {
-    background-color: #ffa08c;
-}
-
 section {
     background-color: #ffff64;
     display: flex;

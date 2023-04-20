@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #383838;
+}
+.mainContent{
+    height: 100%;
+    width: 100%;
+    margin-top: 5em;
+    
+}
+.navList{
+    list-style-type : none;
+}
+.navList li{
+    display: inline;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.navLink{
+    font-weight:bold;
+    color: #dcdcdc;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+}
+ .content{
+    background-color: #1e1e1e;
+    height: 100%;
+    color: yellow;
+}

@@ -11,15 +11,12 @@ html, body {
 .mainContent{
     height: 100%;
     width: 100%;
-    margin-top: 5em;
-    
 }
 .navList{
     list-style-type : none;
 }
 .navList li{
     display: inline;
-    padding-left: 1em;
     padding-right: 1em;
 }
 .navLink{
@@ -60,4 +57,27 @@ html, body {
 } */
 #headers, #request{
     padding: 1em;
+}
+#statsBar{
+    list-style-type: none;
+}
+#statsBar li{
+    display: inline-block;
+}
+#statsBar a{
+    text-decoration: none;
+}
+.statName{
+    font-family: 'Cascadia Code','Courier New', Courier, monospace;
+    padding-right: 0.2em;
+}
+.statName.download{
+    cursor: pointer;
+}
+.statValue{
+    padding-right: 1em;
+}
+
+.statValue.status{
+    color: green;
 }

@@ -8,7 +8,13 @@
 </head>
 <body>
     <div class="mainContent">
-        <!-- tab headers -->
+        <ul id="statsBar">
+            <li><span class="statName status">Status:</span><span class="statValue status">200 OK</span></li>
+            <li><span class="statName">Time:</span><span class="statValue">778 ms</span></li>
+            <li><span class="statName">Size:</span><span class="statValue">515 KB</span></li>
+            <li><a href="#"><span class="statName download"><img src="Save.Dark.svg" height="15px" /></span><span class="statValue">Save Response</span></a></li>
+        </ul>
+        <!-- tab header links -->
         <ul class="navList">
           <li class="navHeader"><a class="navLink" current href="#formatted">Formatted</a></li>
           <li class="navHeader"><a class="navLink" href="#raw">Raw</a></li>
@@ -440,7 +446,7 @@
                         </tr>
                         <tr>
                             <td class="tableNameField">User-Agent</td>
-                            <td>vscode—restctient</td>
+                            <td>vsrestclient/2022.17.7</td>
                         </tr>
                         <tr>
                             <td class="tableNameField">Trace-Id</td>

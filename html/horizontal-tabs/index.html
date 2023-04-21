@@ -2,33 +2,452 @@
 <head>
     <link rel="stylesheet" href="index.css">
     <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/atom-one-dark.min.css">
 </head>
 <body>
     <div class="mainContent">
         <!-- tab headers -->
         <ul class="navList">
-          <li class="navHeader"><a onclick="handleOnClick(event)" class="navLink" href="#formatted">Formatted</a></li>
+          <li class="navHeader"><a class="navLink" current href="#formatted">Formatted</a></li>
           <li class="navHeader"><a class="navLink" href="#raw">Raw</a></li>
           <li class="navHeader"><a class="navLink" href="#headers">Headers</a></li>
-          <li class="navHeader"><a class="navLink" href="#cookies">Cookies</a></li>
           <li class="navHeader"><a class="navLink" href="#request">Request</a></li>
         </ul>
 
-        <div class="content">
+        <div class="content" hidden>
             <div id="formatted" class="tabContent">
-                formatted content here
+                <pre>
+<code>
+[{
+    "author": "FriscoV Inc.",
+    "name": "Clean Blazor Server App",
+    "tags": {
+    "language": "C#",
+    "type": "project"
+    },
+    "classifications": [
+    "Blazor",
+    "Clean",
+    "Cloud",
+    "Linux",
+    "macOS",
+    "Minimal",
+    "Web",
+    "Windows"
+    ],
+    "shortName": [
+    "cleanblazorserver"
+    ],
+    "groupIdentity": "FriscoVInc.CleanBlazor.Server",
+    "identity": "FriscoVInc.CleanBlazor.Server.CSharp",
+    "searchScore": 260,
+    "templatePackId": "FriscoVInc.DotNet.Templates.CleanBlazor",
+    "sourceName": "BlazorApp",
+    "defaultName": "BlazorApp",
+    "baseline": null,
+    "primaryOutputs": [
+    {
+        "path": "BlazorApp.csproj"
+    }
+    ],
+    "symbols": [],
+    "localFilePath": null,
+    "hostFiles": []
+},
+{
+    "author": "FriscoV Inc.",
+    "name": "Clean Blazor WebAssembly App",
+    "tags": {
+    "language": "C#",
+    "type": "project"
+    },
+    "classifications": [
+    "Blazor",
+    "Clean",
+    "Cloud",
+    "Linux",
+    "macOS",
+    "Minimal",
+    "Web",
+    "Windows"
+    ],
+    "shortName": [
+    "cleanblazorwasm"
+    ],
+    "groupIdentity": "FriscoVInc.CleanBlazor.Wasm",
+    "identity": "FriscoVInc.CleanBlazor.Wasm.CSharp",
+    "searchScore": 260,
+    "templatePackId": "FriscoVInc.DotNet.Templates.CleanBlazor",
+    "sourceName": "BlazorApp",
+    "defaultName": "BlazorApp",
+    "baseline": null,
+    "primaryOutputs": [
+    {
+        "path": "Server/BlazorApp.Server.csproj"
+    },
+    {
+        "path": "Client/BlazorApp.Client.csproj"
+    },
+    {
+        "path": "Shared/BlazorApp.Shared.csproj"
+    }
+    ],
+    "symbols": [],
+    "localFilePath": null,
+    "hostFiles": []
+},
+{
+    "author": "RussBaz",
+    "name": "WebFrame Templates: Minimal Project",
+    "tags": {
+    "language": "F#",
+    "type": "project"
+    },
+    "classifications": [
+    "Web",
+    "WebFrame",
+    "Minimal"
+    ],
+    "shortName": [
+    "webframe"
+    ],
+    "groupIdentity": null,
+    "identity": "WebFrameTemplate.MinimalProject",
+    "searchScore": 250,
+    "templatePackId": "RussBaz.WebFrame.Templates",
+    "sourceName": "Minimal",
+    "defaultName": null,
+    "baseline": null,
+    "primaryOutputs": null,
+    "symbols": [],
+    "localFilePath": null,
+    "hostFiles": []
+},
+{
+    "author": "Maxime Mangel",
+    "name": "Minimal Elmish application with Fulma support",
+    "tags": {
+    "language": "F#",
+    "type": "project"
+    },
+    "classifications": [
+    "Fable",
+    "Elmish",
+    "Fulma",
+    "React"
+    ],
+    "shortName": [
+    "fulma-minimal"
+    ],
+    "groupIdentity": "FulmaMinimal",
+    "identity": "Fable.Template.Fulma.Minimal",
+    "searchScore": 210,
+    "templatePackId": "Fable.Template.Fulma.Minimal",
+    "sourceName": "FulmaMinimalTemplate",
+    "defaultName": null,
+    "baseline": null,
+    "primaryOutputs": null,
+    "symbols": [],
+    "localFilePath": null,
+    "hostFiles": []
+},
+{
+    "author": "Peter Kottas",
+    "name": "Minimal microservice",
+    "tags": {
+    "language": "C#"
+    },
+    "classifications": [
+    "Microservices"
+    ],
+    "shortName": [
+    "mcrsvc"
+    ],
+    "groupIdentity": null,
+    "identity": "PeterKottas.DotNetCore.WindowsService.Template",
+    "searchScore": 210,
+    "templatePackId": "PeterKottas.DotNetCore.WindowsService.Template",
+    "sourceName": "PeterKottas.DotNetCore.WindowsService.Template",
+    "defaultName": null,
+    "baseline": null,
+    "primaryOutputs": null,
+    "symbols": [],
+    "localFilePath": null,
+    "hostFiles": []
+},
+{
+    "author": "Jaxel Rojas",
+    "name": "Minimal ASP.Net Core with Vue.js",
+    "tags": {
+    "language": "C#"
+    },
+    "classifications": [
+    "Vue.Js",
+    "SPA"
+    ],
+    "shortName": [
+    "simplevue"
+    ],
+    "groupIdentity": null,
+    "identity": "Vue.Simple.Template",
+    "searchScore": 200,
+    "templatePackId": "Vue.Simple.Template",
+    "sourceName": "Vue.Simple.Template",
+    "defaultName": null,
+    "baseline": null,
+    "primaryOutputs": [
+    {
+        "path": "Vue.Simple.Template.csproj"
+    }
+    ],
+    "symbols": [],
+    "localFilePath": null,
+    "hostFiles": []
+},
+{
+    "author": "SilkyFowl",
+    "name": "Minimal Fable VsCode Extension",
+    "tags": {
+    "language": "F#",
+    "type": "project"
+    },
+    "classifications": [
+    "Fable",
+    "VsCode"
+    ],
+    "shortName": [
+    "fable-vscode"
+    ],
+    "groupIdentity": null,
+    "identity": "Fable.VsCode.Extension",
+    "searchScore": 200,
+    "templatePackId": "Fable.VsCode.Extention.Template",
+    "sourceName": "fable-vscode-template",
+    "defaultName": null,
+    "baseline": null,
+    "primaryOutputs": null,
+    "symbols": [],
+    "localFilePath": null,
+    "hostFiles": []
+},
+{
+    "author": "SilkyFowl",
+    "name": "Minimal Fable VsCode Extension",
+    "tags": {
+    "language": "F#",
+    "type": "project"
+    },
+    "classifications": [
+    "Fable",
+    "VsCode"
+    ],
+    "shortName": [
+    "fable-vscode"
+    ],
+    "groupIdentity": null,
+    "identity": "Fable.VsCode.Extension",
+    "searchScore": 200,
+    "templatePackId": "Fable.VsCode.Extention.Template",
+    "sourceName": "fable-vscode-template",
+    "defaultName": null,
+    "baseline": null,
+    "primaryOutputs": null,
+    "symbols": [],
+    "localFilePath": null,
+    "hostFiles": []
+},
+{
+    "author": "MASA",
+    "name": "MASA Framework Project",
+    "tags": {
+    "language": "C#",
+    "type": "project"
+    },
+    "classifications": [
+    "Service",
+    "MASA",
+    "Minimal API",
+    "Dapr"
+    ],
+    "shortName": [
+    "masafx"
+    ],
+    "groupIdentity": null,
+    "identity": "Masa.Framework.Template",
+    "searchScore": 50,
+    "templatePackId": "Masa.Template",
+    "sourceName": "Masa.Framework",
+    "defaultName": "MasaProject",
+    "baseline": null,
+    "primaryOutputs": null,
+    "symbols": [],
+    "localFilePath": null,
+    "hostFiles": []
+},
+{
+    "author": "Juan Carlos Torres Cuervo",
+    "name": "CleanArchitectureNet6_MinimalApi",
+    "tags": {
+    "type": "solution",
+    "language": "C#"
+    },
+    "classifications": [
+    "Web",
+    "Net6",
+    "Minimal Api"
+    ],
+    "shortName": [
+    "cleanarchitectureNet6_minimalapi"
+    ],
+    "groupIdentity": null,
+    "identity": "CleanArchitectureNet6_MinimalApi",
+    "searchScore": 50,
+    "templatePackId": "CleanArchitectureNet6_MinimalApi",
+    "sourceName": "CleanArchitectureNet6",
+    "defaultName": "CleanArchitectureNet6",
+    "baseline": null,
+    "primaryOutputs": null,
+    "symbols": [],
+    "localFilePath": null,
+    "hostFiles": []
+},
+{
+    "author": "Jannik Buschke",
+    "name": "ASP.NET Core with React (CRA)",
+    "tags": {
+    "language": "C#",
+    "type": "project"
+    },
+    "classifications": [
+    "AspNetCore",
+    "React"
+    ],
+    "shortName": [
+    "asp-cra"
+    ],
+    "groupIdentity": "JBuschke.AspCra",
+    "identity": "JBuschke.AspCra",
+    "searchScore": 10,
+    "templatePackId": "JBuschke.AspCra",
+    "sourceName": "AspCra",
+    "defaultName": "MyApp",
+    "baseline": null,
+    "primaryOutputs": null,
+    "symbols": [],
+    "localFilePath": null,
+    "hostFiles": []
+},
+{
+    "author": "nojaf",
+    "name": "Fable template (nojaf)",
+    "tags": {
+    "language": "F#",
+    "type": "project"
+    },
+    "classifications": [
+    "Fable"
+    ],
+    "shortName": [
+    "fable-nojaf"
+    ],
+    "groupIdentity": null,
+    "identity": "Fable.Template.nojaf",
+    "searchScore": 10,
+    "templatePackId": "Fable.Template.nojaf",
+    "sourceName": "FableProject",
+    "defaultName": null,
+    "baseline": null,
+    "primaryOutputs": null,
+    "symbols": [],
+    "localFilePath": null,
+    "hostFiles": []
+}]
+                      </code>
+                </pre>
             </div>
             <div id="raw" class="tabContent">
-                raw content here
+<code id="rawResult">
+[{"author":"FriscoV Inc.","name":"Clean Blazor Server App","tags":{"language":"C#","type":"project"},"classifications":["Blazor","Clean","Cloud","Linux","macOS","Minimal","Web","Windows"],"shortName":["cleanblazorserver"],"groupIdentity":"FriscoVInc.CleanBlazor.Server","identity":"FriscoVInc.CleanBlazor.Server.CSharp","searchScore":260,"templatePackId":"FriscoVInc.DotNet.Templates.CleanBlazor","sourceName":"BlazorApp","defaultName":"BlazorApp","baseline":null,"primaryOutputs":[{"path":"BlazorApp.csproj"}],"symbols":[],"localFilePath":null,"hostFiles":[]},{"author":"FriscoV Inc.","name":"Clean Blazor WebAssembly App","tags":{"language":"C#","type":"project"},"classifications":["Blazor","Clean","Cloud","Linux","macOS","Minimal","Web","Windows"],"shortName":["cleanblazorwasm"],"groupIdentity":"FriscoVInc.CleanBlazor.Wasm","identity":"FriscoVInc.CleanBlazor.Wasm.CSharp","searchScore":260,"templatePackId":"FriscoVInc.DotNet.Templates.CleanBlazor","sourceName":"BlazorApp","defaultName":"BlazorApp","baseline":null,"primaryOutputs":[{"path":"Server/BlazorApp.Server.csproj"},{"path":"Client/BlazorApp.Client.csproj"},{"path":"Shared/BlazorApp.Shared.csproj"}],"symbols":[],"localFilePath":null,"hostFiles":[]},{"author":"RussBaz","name":"WebFrame Templates: Minimal Project","tags":{"language":"F#","type":"project"},"classifications":["Web","WebFrame","Minimal"],"shortName":["webframe"],"groupIdentity":null,"identity":"WebFrameTemplate.MinimalProject","searchScore":250,"templatePackId":"RussBaz.WebFrame.Templates","sourceName":"Minimal","defaultName":null,"baseline":null,"primaryOutputs":null,"symbols":[],"localFilePath":null,"hostFiles":[]},{"author":"Maxime Mangel","name":"Minimal Elmish application with Fulma support","tags":{"language":"F#","type":"project"},"classifications":["Fable","Elmish","Fulma","React"],"shortName":["fulma-minimal"],"groupIdentity":"FulmaMinimal","identity":"Fable.Template.Fulma.Minimal","searchScore":210,"templatePackId":"Fable.Template.Fulma.Minimal","sourceName":"FulmaMinimalTemplate","defaultName":null,"baseline":null,"primaryOutputs":null,"symbols":[],"localFilePath":null,"hostFiles":[]},{"author":"Peter Kottas","name":"Minimal microservice","tags":{"language":"C#"},"classifications":["Microservices"],"shortName":["mcrsvc"],"groupIdentity":null,"identity":"PeterKottas.DotNetCore.WindowsService.Template","searchScore":210,"templatePackId":"PeterKottas.DotNetCore.WindowsService.Template","sourceName":"PeterKottas.DotNetCore.WindowsService.Template","defaultName":null,"baseline":null,"primaryOutputs":null,"symbols":[],"localFilePath":null,"hostFiles":[]},{"author":"Jaxel Rojas","name":"Minimal ASP.Net Core with Vue.js","tags":{"language":"C#"},"classifications":["Vue.Js","SPA"],"shortName":["simplevue"],"groupIdentity":null,"identity":"Vue.Simple.Template","searchScore":200,"templatePackId":"Vue.Simple.Template","sourceName":"Vue.Simple.Template","defaultName":null,"baseline":null,"primaryOutputs":[{"path":"Vue.Simple.Template.csproj"}],"symbols":[],"localFilePath":null,"hostFiles":[]},{"author":"SilkyFowl","name":"Minimal Fable VsCode Extension","tags":{"language":"F#","type":"project"},"classifications":["Fable","VsCode"],"shortName":["fable-vscode"],"groupIdentity":null,"identity":"Fable.VsCode.Extension","searchScore":200,"templatePackId":"Fable.VsCode.Extention.Template","sourceName":"fable-vscode-template","defaultName":null,"baseline":null,"primaryOutputs":null,"symbols":[],"localFilePath":null,"hostFiles":[]},{"author":"SilkyFowl","name":"Minimal Fable VsCode Extension","tags":{"language":"F#","type":"project"},"classifications":["Fable","VsCode"],"shortName":["fable-vscode"],"groupIdentity":null,"identity":"Fable.VsCode.Extension","searchScore":200,"templatePackId":"Fable.VsCode.Extention.Template","sourceName":"fable-vscode-template","defaultName":null,"baseline":null,"primaryOutputs":null,"symbols":[],"localFilePath":null,"hostFiles":[]},{"author":"MASA","name":"MASA Framework Project","tags":{"language":"C#","type":"project"},"classifications":["Service","MASA","Minimal API","Dapr"],"shortName":["masafx"],"groupIdentity":null,"identity":"Masa.Framework.Template","searchScore":50,"templatePackId":"Masa.Template","sourceName":"Masa.Framework","defaultName":"MasaProject","baseline":null,"primaryOutputs":null,"symbols":[],"localFilePath":null,"hostFiles":[]},{"author":"Juan Carlos Torres Cuervo","name":"CleanArchitectureNet6_MinimalApi","tags":{"type":"solution","language":"C#"},"classifications":["Web","Net6","Minimal Api"],"shortName":["cleanarchitectureNet6_minimalapi"],"groupIdentity":null,"identity":"CleanArchitectureNet6_MinimalApi","searchScore":50,"templatePackId":"CleanArchitectureNet6_MinimalApi","sourceName":"CleanArchitectureNet6","defaultName":"CleanArchitectureNet6","baseline":null,"primaryOutputs":null,"symbols":[],"localFilePath":null,"hostFiles":[]},{"author":"Jannik Buschke","name":"ASP.NET Core with React (CRA)","tags":{"language":"C#","type":"project"},"classifications":["AspNetCore","React"],"shortName":["asp-cra"],"groupIdentity":"JBuschke.AspCra","identity":"JBuschke.AspCra","searchScore":10,"templatePackId":"JBuschke.AspCra","sourceName":"AspCra","defaultName":"MyApp","baseline":null,"primaryOutputs":null,"symbols":[],"localFilePath":null,"hostFiles":[]},{"author":"nojaf","name":"Fable template (nojaf)","tags":{"language":"F#","type":"project"},"classifications":["Fable"],"shortName":["fable-nojaf"],"groupIdentity":null,"identity":"Fable.Template.nojaf","searchScore":10,"templatePackId":"Fable.Template.nojaf","sourceName":"FableProject","defaultName":null,"baseline":null,"primaryOutputs":null,"symbols":[],"localFilePath":null,"hostFiles":[]}]
+</code>
             </div>
             <div id="headers" class="tabContent">
-                headers content here
-            </div>
-            <div id="cookies" class="tabContent">
-                cookies content here
+                <table class="table">
+                    <colgroup>
+                        <col class="table-names" />
+                        <col class="table-values" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tableNameField">HTTP/1.1</td>
+                            <td>Ok</td>
+                        </tr>
+                        <tr>
+                            <td class="tableNameField">Date</td>
+                            <td>Fri, 21 Apr 2023 GMT</td>
+                        </tr>
+                        <tr>
+                            <td class="tableNameField">Content-Type</td>
+                            <td>application/json</td>
+                        </tr>
+                        <tr>
+                            <td class="tableNameField">Content-Length</td>
+                            <td>281</td>
+                        </tr>
+                        <tr>
+                            <td class="tableNameField">Connection</td>
+                            <td>close</td>
+                        </tr>
+                        <tr>
+                            <td class="tableNameField">Server</td>
+                            <td>gunicorn/19.9.@</td>
+                        </tr>
+                        <tr>
+                            <td class="tableNameField">Access-Control-Allow-Origin</td>
+                            <td>*</td>
+                        </tr>
+                        <tr>
+                            <td class="tableNameField">Access-Control-Allow-Credentials</td>
+                            <td>true</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <div id="request" class="tabContent">
-                request content here
+                <h2>Request Headers</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tableNameField">Accept-Encoding</td>
+                            <td>gzip, deflate,</td>
+                        </tr>
+                        <tr>
+                            <td class="tableNameField">Host</td>
+                            <td>httpbin.org</td>
+                        </tr>
+                        <tr>
+                            <td class="tableNameField">User-Agent</td>
+                            <td>vscode—restctient</td>
+                        </tr>
+                        <tr>
+                            <td class="tableNameField">Trace-Id</td>
+                            <td>Root=1-6441fde2-5521d1d316146efd36e097b71</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

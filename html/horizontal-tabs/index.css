@@ -2,6 +2,11 @@ html, body {
     height: 100%;
     margin: 0;
     background-color: #383838;
+    color: #dcdcdc;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.hljs-punctuation {
+    color: white !important;
 }
 .mainContent{
     height: 100%;
@@ -24,8 +29,35 @@ html, body {
     text-decoration: none;
     font-size: 2em;
 }
- .content{
+.navLink[current]{
+    border-bottom: 0.5rem solid #403582;
+}
+.content{
     background-color: #1e1e1e;
     height: 100%;
-    color: yellow;
+}
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-family: 'Cascadia Code','Courier New', Courier, monospace;
+    font-size: large;
+}
+.table thead tr{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+.table tbody tr td{
+    padding-right: 2em;
+}
+.tableNameField{
+    text-align: right;
+}
+/* #request{
+    padding: 1em;
+} */
+#headers, #request{
+    padding: 1em;
 }

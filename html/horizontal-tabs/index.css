@@ -52,9 +52,6 @@ html, body {
 .tableNameField{
     text-align: right;
 }
-/* #request{
-    padding: 1em;
-} */
 #headers, #request{
     padding: 1em;
 }
